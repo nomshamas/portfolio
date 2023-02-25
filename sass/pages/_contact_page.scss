@@ -1,0 +1,54 @@
+.contact {
+  padding-top: $section-heading;
+  
+  // &_btn {
+  //   @include pri-btn;
+  //   border-radius: 0;
+  // }
+
+  &_description {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    &:hover .contact_email,
+    &:hover .contact_phone {
+      text-decoration: none;
+      color: $primary-green;
+    }
+  }
+
+  &_label {
+    font-size: $font-normal;
+    font-family: $paragraph-family;
+    margin-bottom: .75rem;
+    color: $black-normal;
+    text-decoration: none;
+    &:hover,
+    &:active,
+    &:visited,
+    &:link {
+      color: $black-normal !important;
+      text-decoration: none !important;  
+    }
+  }
+
+  &_phone,
+  &_email {
+    height: 3rem;
+    width: 3rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1rem;
+    border-radius: 50%;
+    color: $gray-shadow;
+    text-decoration: none;
+  }
+
+  &_field {
+    color: $black;
+  }
+  &_field:focus {
+    color: $black;
+  }
+}
